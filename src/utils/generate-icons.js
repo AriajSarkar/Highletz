@@ -11,6 +11,8 @@ import { execSync } from 'child_process';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+
+// Please don't change the SVG content unless you know what you're doing
 // Icon content - a simple SVG for the extension
 const generateSvgIcon = (color = '#2ea44f') => `
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">

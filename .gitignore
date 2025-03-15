@@ -32,3 +32,15 @@ pnpm-debug.log*
 
 # zip files
 *.zip
+
+# extension files
+extensions/
+extension-key.pem
+*.crx
+*.xpi
+
+# Test folders
+__tests__/
+test/
+tests/
+temp-*
