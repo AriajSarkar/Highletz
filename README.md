@@ -38,7 +38,6 @@ This extension is built with TypeScript, Tailwind CSS, and Webpack.
 github-file-highlighter-ts/
 ├── public/                # Static files copied to dist
 │   ├── assets/            # Extension icons
-│   └── manifest.json      # Extension manifest
 ├── src/
 │   ├── background/        # Background script
 │   ├── content/           # Content scripts for GitHub pages
