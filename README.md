@@ -64,6 +64,11 @@ pnpm build
 pnpm package
 ```
 
+### Mozilla Add-on Submission
+
+For Mozilla Add-on reviewers and developers who need to build from source:
+- See the [Mozilla Add-on Submission Info](amo-listing-info.md) for detailed build instructions
+
 ## License
 
 MIT

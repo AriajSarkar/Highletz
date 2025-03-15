@@ -1,5 +1,5 @@
 import '../styles/content.css';
-import { highlightCommitTimes } from './highlighter';
+import { highlightCommitTimes } from './content/highlighter';
 import { setupMutationObserver } from './content/observers';
 import { debounce } from './utils/utils';
 

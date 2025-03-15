@@ -10,8 +10,12 @@
     "build": "cross-env NODE_ENV=production webpack",
     "clean": "rimraf dist",
     "lint": "eslint . --ext .ts",
-    "package": "npm run build && zip -r dist/github-file-highlighter-v$npm_package_version.zip dist",
-    "generate-icons": "node src/utils/generate-icons.js"
+    "package": "npm run build && node src/utils/create-zip.js",
+    "generate-icons": "node src/utils/generate-icons.js",
+    "package:chrome": "npm run build && node src/utils/package-extension.js chrome",
+    "package:firefox": "npm run build && node src/utils/package-extension.js firefox",
+    "package:all": "npm run build && npm run package && node src/utils/package-extension.js all",
+    "test:firefox": "npm run build && node src/utils/firefox-install-helper.js"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.246",
@@ -21,6 +25,7 @@
     "autoprefixer": "^10.4.16",
     "copy-webpack-plugin": "^11.0.0",
     "cross-env": "^7.0.3",
+    "crx": "^5.0.1",
     "css-loader": "^6.8.1",
     "cssnano": "^6.0.1",
     "eslint": "^8.54.0",
@@ -32,10 +37,12 @@
     "tailwindcss": "^3.3.5",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.2",
+    "web-ext": "^7.8.0",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "crypto": "^1.0.1",
     "fs": "^0.0.1-security",
     "path": "^0.12.7"
   }
