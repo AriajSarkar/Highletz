@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Using direct CSS instead of @apply for better browser extension compatibility */
+.gh-highlight-today,
+[role="row"].gh-highlight-today,
+tr.gh-highlight-today {
+  background-color: rgba(46, 160, 67, 0.15) !important;
+  border-left: 4px solid #2ea44f !important;
+  box-shadow: inset 0 0 0 1px rgba(46, 160, 67, 0.3) !important;
+  padding-left: 0.25rem !important;
+  position: relative !important;
+}
+
+.gh-highlight-yesterday,
+[role="row"].gh-highlight-yesterday,
+tr.gh-highlight-yesterday {
+  background-color: rgba(217, 119, 6, 0.15) !important;
+  border-left: 4px solid #d97706 !important;
+  box-shadow: inset 0 0 0 1px rgba(217, 119, 6, 0.3) !important;
+  padding-left: 0.25rem !important;
+  position: relative !important;
+}
+
+.gh-highlight-recent,
+[role="row"].gh-highlight-recent,
+tr.gh-highlight-recent {
+  background-color: rgba(88, 166, 255, 0.15) !important;
+  border-left: 4px solid #58a6ff !important;
+  box-shadow: inset 0 0 0 1px rgba(88, 166, 255, 0.3) !important;
+  padding-left: 0.25rem !important;
+  position: relative !important;
+}
+
+/* Make the commit age column pop more */
+.gh-highlight-today .react-directory-commit-age,
+.gh-highlight-yesterday .react-directory-commit-age,
+.gh-highlight-recent .react-directory-commit-age {
+  font-weight: 600 !important;
+}
+
+/* Make file list highlighting more visible */
+.gh-highlight-today .react-directory-filename-column a,
+.gh-highlight-yesterday .react-directory-filename-column a,
+.gh-highlight-recent .react-directory-filename-column a {
+  font-weight: 600 !important;
+}
+
+/* Ensure text remains visible in dark mode */
+.gh-highlight-today, 
+.gh-highlight-yesterday, 
+.gh-highlight-recent {
+  color: inherit !important;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub File Highlighter</title>
+</head>
+<body class="w-64 p-4 text-sm">
+  <div class="mb-4">
+    <h1 class="text-lg font-bold mb-2">GitHub File Highlighter</h1>
+    <p class="text-gray-600">Customize your file highlighting preferences</p>
+  </div>
+
+  <form class="space-y-3">
+    <div class="flex items-center">
+      <input type="checkbox" id="enabled" class="mr-2">
+      <label for="enabled">Enable extension</label>
+    </div>
+    
+    <div class="flex items-center">
+      <input type="checkbox" id="showBanner" class="mr-2">
+      <label for="showBanner">Show active banner</label>
+    </div>
+
+    <div class="border-t my-2 pt-2">
+      <h2 class="font-medium mb-2">Highlighting Options</h2>
+
+      <div class="flex items-center">
+        <input type="checkbox" id="highlightToday" class="mr-2">
+        <label for="highlightToday">Highlight today's changes</label>
+      </div>
+      
+      <div class="flex items-center">
+        <input type="checkbox" id="highlightYesterday" class="mr-2">
+        <label for="highlightYesterday">Highlight yesterday's changes</label>
+      </div>
+      
+      <div class="flex items-center">
+        <input type="checkbox" id="highlightRecent" class="mr-2">
+        <label for="highlightRecent">Highlight recent changes</label>
+      </div>
+      
+      <div class="flex items-center mt-2">
+        <label for="recentDays" class="mr-2">Recent days:</label>
+        <input type="number" id="recentDays" class="w-12 border rounded px-1" min="1" max="14">
+      </div>
+    </div>
+    
+    <div class="flex justify-end">
+      <button id="saveButton" type="button" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+        Save
+      </button>
+    </div>
+    
+    <div id="statusMessage" class="text-center text-green-600 font-medium hidden">
+      Settings saved!
+    </div>
+  </form>
+</body>
+</html>
