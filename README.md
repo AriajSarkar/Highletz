@@ -32,27 +32,6 @@ A browser extension that highlights recently modified files in GitHub repositori
 
 This extension is built with TypeScript, Tailwind CSS, and Webpack.
 
-### Project Structure
-
-```
-github-file-highlighter-ts/
-├── public/                # Static files copied to dist
-│   ├── assets/            # Extension icons
-├── src/
-│   ├── background/        # Background script
-│   ├── content/           # Content scripts for GitHub pages
-│   ├── popup/             # Extension popup UI
-│   ├── styles/            # CSS styles with Tailwind
-│   ├── utils/             # Utility functions
-│   └── types.ts           # TypeScript type definitions
-├── .eslintrc.js           # ESLint configuration
-├── postcss.config.js      # PostCSS configuration
-├── tailwind.config.js     # Tailwind CSS configuration
-├── tsconfig.json          # TypeScript configuration
-├── webpack.config.js      # Webpack configuration
-└── package.json           # Project dependencies and scripts
-```
-
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v14+)
